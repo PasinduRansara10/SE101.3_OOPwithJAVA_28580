@@ -1,0 +1,59 @@
+Employee Class
+package com.mycompany.lab3;
+public class Employee {
+    private int empID;
+    private String empname;
+    private String empDesignation;
+    public void setempID(int ID){
+    empID=ID;
+    }
+    public void setempname(String n){
+    empname=n;
+    }
+    public void setempDesignation(String d){
+    empDesignation=d;
+    }
+    public int getempID(){
+    return empID;
+    }
+    public String getempname(){
+    return empname;
+    }
+    public String getempDesignation(){
+    return empDesignation;
+    }
+}
+
+
+
+
+The class used to invoke Employee Class
+public class Lab3 {
+
+    public static void main(String[] args) {
+        Employee Bo=new Employee(); 
+        Bo.setempname("Mr. bogdan");
+        Bo.setempID(101);
+        Bo.setempDesignation("Chief executive marketer");
+        
+        Employee Bi=new Employee();
+        Bi.setempname("Ms.Bird");
+        Bi.setempID(103);
+        Bi.setempDesignation("Junior Executive");
+        
+        
+       
+       
+        {
+            System.out.println("Employee name: "+Bo.getempname());
+            System.out.println("Employee number: "+Bo.getempID());
+            System.out.println("Designation: "+Bo.getempDesignation());
+        }
+        System.out.println("");
+         {
+            System.out.println("Employee name: "+Bi.getempname());
+            System.out.println("Employee number: "+Bi.getempID());
+            System.out.println("Designation: "+Bi.getempDesignation());
+        }
+    }
+}
