@@ -1,0 +1,23 @@
+
+
+package com.mycompany.lab_exceptionhandling;
+import java.util.*;
+
+public class Lab_ExceptionHandling {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in); //System.in is a standed input stream 
+        try{
+            System.out.println("Enter the numerator: ");
+            int numerator = sc.nextInt();
+            System.out.println("Enter second denominator: ");
+            int denominator =sc.nextInt();
+            int answer = numerator/denominator;
+            System.out.println("Answer is : "+answer);
+        }
+        catch (ArithmeticException e){
+            System.out.println("Error: Devition by zero is not allowed. \n");
+        }
+    }
+}

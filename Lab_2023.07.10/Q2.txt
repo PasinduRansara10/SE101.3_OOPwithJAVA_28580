@@ -1,0 +1,19 @@
+
+
+package com.mycompany.lab_exceptionhandling_02;
+
+
+public class Lab_ExceptionHandling_02 {  //Array out of bounds
+
+    public static void main(String[] args) {
+       int []numbers = {1,2,3,4,5};
+       
+       try{
+           int value = numbers[10];
+           System.out.println("Value: "+value);
+       }
+       catch(ArrayIndexOutOfBoundsException e){
+           System.out.println("Error: Array index is out of bounds.\n"+e);
+       }
+    }
+}
