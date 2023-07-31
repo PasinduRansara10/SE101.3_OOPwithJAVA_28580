@@ -1,0 +1,11 @@
+public class NameAndDegree {
+    public static void main(String[] args) {
+        System.out.println("My name is Chanuka");
+        System.out.println("My Degree Programme is Networking");
+    }
+}
+
+save this as : NameAndDegree.java
+Then navigate this file through cmd 
+Then compile the java file : javac NameAndDegree.java
+Run the programme : java NameAndDegree
