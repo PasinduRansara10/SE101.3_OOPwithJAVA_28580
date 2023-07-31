@@ -1,0 +1,37 @@
+public class Item {
+    protected int location;
+    protected String description;
+
+    // Constructor
+    public Item(int location, String description) {
+        this.location = location;
+        this.description = description;
+    }
+
+    // Getter for location
+    protected int getLocation() {
+        return location;
+    }
+
+    // Setter for location
+    protected void setLocation(int location) {
+        this.location = location;
+    }
+
+    // Getter for description
+    protected String getDescription() {
+        return description;
+    }
+
+    // Setter for description
+    protected void setDescription(String description) {
+        this.description = description;
+    }
+}
+
+public class Monster extends Item {
+    // Constructor
+    public Monster(int location, String description) {
+        super(location, description);
+    }
+}
